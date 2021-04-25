@@ -1,0 +1,21 @@
+
+.content{
+	margin-top: 20px;
+	width: 920px;
+	grid-area:cont;
+
+}
+
+input{
+	margin: 20px 5px;
+	 width:600px; 
+	 height:60px;
+	 border-radius: 5px;
+	 border: solid gray 0.5px;
+}
+.ava_desc{
+	display: flex;
+}
+.posts{
+	margin: 5px;
+}

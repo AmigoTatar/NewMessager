@@ -1,0 +1,23 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f0f2f7;
+}
+
+.wrapper{
+	margin: 0 auto;
+	display: grid;
+ 	grid-template-areas: 
+ 	"hed hed"
+ 	"navbar cont";
+ 	grid-template-rows: 80px 1fr;
+ 	grid-template-columns: 2fr 10fr;
+  
+}
+
+.content{
+	margin-top: 20px;
+	width: 920px;
+	grid-area:cont;
+
+}

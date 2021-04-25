@@ -1,0 +1,99 @@
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	grid-area:navbar;
+	width: 250px;
+	list-style-type: none;
+	margin-left: -70px;
+	margin-top: 70px;
+	padding-left: 55px;
+    position: absolute;
+
+}
+nav a{
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	padding: 12px 20px;
+	color: black;
+}
+nav img{
+	padding: 0px 10px
+}
+nav li{
+	list-style-type: none;
+}
+.header .nav{
+  
+	padding-top: -210px;
+}
+.menu__item:hover{
+	color:#0069be;
+}
+.menu__item.active{
+    color:rgb(71, 89, 245);
+}
+
+
+@media(max-width: 767px){
+    .menu-burger__header {
+        position: relative; /* задаем относительное позиционирование */
+        width: 45px; /* определяем размеры блока */
+        height: 45px;
+        display: block;
+        margin-left: 30px;
+        margin-top: 30px;
+        z-index: 10;
+    }
+
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+}
+.menu-burger__header span{top: 21px;}
+.menu-burger__header:after, .menu-burger__header:before{content: '';}
+.menu-burger__header:after{bottom: 5px;}
+.menu-burger__header:before{top: 5px;}
+.menu-burger__header.open-menu span {
+    opacity:0; 
+    transition: 0.2s; 
+}
+.menu-burger__header.open-menu:before {
+    transform: rotate(45deg);
+    top: 25px;
+    transition: 0.2s;
+}
+.menu-burger__header.open-menu:after {
+    transform: rotate(-45deg);
+    bottom: 16px;
+    transition: 0.2s;
+}
+
+.header__nav {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: rgb(245, 246, 246);
+    box-shadow: #ccc;
+    width: 50%;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+    left: -100%;
+    transition: all 0.4s ease;
+}
+.header__menu {
+    display: block;
+}
+.header__menu li {
+    margin: 40px 0px 40px 33px;
+    font-size: 14px;
+}
+.header__nav.open-menu {
+    left: 0;
+}
+}

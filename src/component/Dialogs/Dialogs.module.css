@@ -1,0 +1,34 @@
+
+.wrapperDi{
+    display: grid;
+    grid-template-areas: 
+ 	"chat  mess"
+     "text text ";
+     width: auto;
+    
+}
+.chats{
+    grid-area:chat;
+    padding: 20px;
+    margin: 10px;
+    
+}
+.messages{
+    grid-area:mess;
+    padding: 20px;
+    margin: 10px;
+    
+}
+.active{
+    color: blueviolet;
+}
+.item_meessage{
+    padding: 15px;
+}
+.item_dialog{
+    padding: 15px;
+}
+input {
+    grid-area:text;
+    width: 300px;
+}
