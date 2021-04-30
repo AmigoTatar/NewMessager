@@ -30,14 +30,12 @@ let store = {
     },
     _callSubscriber() {
         console.log('state is change')},
-
     getState(){
         return this._state;
     },
     subscribe  (observer)  {
         this._callSubscriber = observer;
     },
-
     addPost()  {
         let newPost = {
             id:4,
@@ -52,7 +50,6 @@ let store = {
             this._state.profilePage.newPostText = newText;
             this._callSubscriber(this._state);
     },
-
     dispatch(action){
         if(action.type === 'ADD-POST'){
             let newPost = {
@@ -69,7 +66,7 @@ let store = {
         }
     }
 
-}//38 12 40
+}//39 0000
     
 export default store;
 window.state = store;

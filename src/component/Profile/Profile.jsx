@@ -12,12 +12,12 @@ const Profile = (props) => {
 
 	return (
 		<div className={style.content}>
-			<MessagesPrf addPost={props.addPost}
+			<MessagesPrf dispatch={props.dispatch}
 						 newPostText={props.profilePage.newPostText}
 						 updateNewPostText={props.updateNewPostText}
 			/>
 			<MyPosts posts={props.profilePage.posts}
-					 addPost={props.addPost}	/>
+					 addPost={props.addPost}/>
 		</div>
 	)
 }
