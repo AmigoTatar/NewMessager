@@ -19,7 +19,7 @@ let store = {
                 {id: 6, messag: 'tro ol ol'},
             ],
             dialogsData: [
-                {id: 1, name: 'UserName1'},
+                {id: 1, name: 'UserName22'},
                 {id: 2, name: 'UserName2'},
                 {id: 3, name: 'UserName3'},
                 {id: 4, name: 'UserName4'},
