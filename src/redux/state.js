@@ -33,7 +33,7 @@ let store = {
                 {id: 5, name: 'UserName5'},
                 {id: 6, name: 'UserName6'},
             ],
-            newMessageBody: "Enther text    "
+            newMessageBody: "Enther text "
 
         }
     },
