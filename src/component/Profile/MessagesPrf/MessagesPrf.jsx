@@ -2,21 +2,28 @@ import React from 'react';
 import style from './Messages.module.css';
 import avatar from '../../../imgProfile/avatarProfile/avatar.jpg';
 import content from '../../../imgProfile/content/img1.jpg';
+import {
+	addPostActionCreator, updateNewPostTextActionCreator
+} from "../../../redux/state";
+
+
 
 const MessagesPrf = (props) => {
 
 
 	let addPost = () => {
-		props.dispatch({type: 'ADD-POST'});
+		props.dispatch(addPostActionCreator());
 		/*props.updateNewPostText(' ');*/
 	}
 	let newPostElement = React.createRef();
 
 	let onPostChange = ()=>{
 	let text = newPostElement.current.value;
-		let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text};
+		// eslint-disable-next-line no-undef
+		let action = updateNewPostTextActionCreator(text);
 		props.dispatch(action);
 	}
+
 
 	return (
 		<div className={style.content}>
