@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import store  from "./redux/state";
 import {BrowserRouter} from "react-router-dom";
 
- let _callSubscriber = (state) => {
+ let rerenderEnthireThree = (state) => {
     ReactDOM.render(
         <React.StrictMode>
             <BrowserRouter>
@@ -16,9 +16,9 @@ import {BrowserRouter} from "react-router-dom";
         document.getElementById('root')
     );
 }
-_callSubscriber (store.getState());
+rerenderEnthireThree(store.getState());
 
-store.subscribe(_callSubscriber);
+store.subscribe(rerenderEnthireThree);
 
 
 

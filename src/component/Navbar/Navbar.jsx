@@ -20,7 +20,7 @@ const Navbar = () => {
 				<li><NavLink to="comunity" className={style.menu__item}activeClassName={style.active}  ><img src={comunity} alt="" /> Сообщество</NavLink></li>
 				<li><NavLink to="profile" className={style.menu__item} activeClassName={style.active} ><img src={profile} alt="" /> Профиль</NavLink></li>
 				<li><NavLink to="ftiends" className={style.menu__item} activeClassName={style.active} ><img src={friends} alt="" /> Друзья </NavLink></li>
-				<li><NavLink to="message" className={style.menu__item}  activeClassName={style.active}><img src={messangers} alt="" /> Сообщения</NavLink></li>
+				<li><NavLink to="message" className={style.menu__item} activeClassName={style.active}><img src={messangers} alt="" /> Сообщения</NavLink></li>
 				<li><NavLink to="music" className={style.menu__item} activeClassName={style.active} ><img src={music} alt="" /> Музыка</NavLink></li>
 				<li><NavLink to="gallerey" className={style.menu__item} activeClassName={style.active} ><img src={Photos} alt="" /> Галерея</NavLink></li>
 				<li><NavLink to="settings" className={style.menu__item}activeClassName={style.active} > <img src={settings} alt="" /> Настройки</NavLink></li>

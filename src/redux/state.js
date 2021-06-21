@@ -65,12 +65,12 @@ let store = {
         }else if(action.type === 'SEND_MESSAGE'){
             let body =  this._state.messagePage.newMessageBody;
             this._state.messagePage.newMessageBody = '';
-            this._state.messagePage.dialogsData.push({id:7, messag: body});
+            this._state.messagePage.messageData.push({id:7, messag: body});
             this._callSubscriber(this._state);
         }
     }
 
-}//40 0000
+}//41 000 
 export  const addPostActionCreator = ()=> ({ type: ADD_POST});
 export const updateNewPostTextActionCreator = (text)=> ({ type: UPDATE_NEW_POST_TEXT, newText: text});
 
